@@ -139,15 +139,13 @@ The user "windows11lab-na" on the "windows11lab-na" device initiated and complet
 -   Recommendations provided for application control and monitoring
 
 ------------------------------------------------------------------------
-
 # 🧠 MDE Tables Referenced
 
-  Table                 Purpose
-  --------------------- ---------------------------------------
-  DeviceFileEvents      Detect download and file activity
-  DeviceProcessEvents   Detect execution and process creation
-  DeviceNetworkEvents   Detect TOR network communications
-
+| Table               | Purpose                                   |
+|---------------------|-------------------------------------------|
+| DeviceFileEvents    | Detect download and file activity         |
+| DeviceProcessEvents | Detect execution and process creation     |
+| DeviceNetworkEvents | Detect TOR network communications         |
 ------------------------------------------------------------------------
 
 # 👤 Author
