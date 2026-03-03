@@ -12,11 +12,11 @@ the endpoint.
 
 ------------------------------------------------------------------------
 
-## 🔎 High-Level IoC Discovery Plan
+### High-Level TOR-Related IoC Discovery Plan
 
-1.  Review **DeviceFileEvents** for TOR-related downloads or files\
-2.  Review **DeviceProcessEvents** for installation or execution\
-3.  Review **DeviceNetworkEvents** for TOR-related outbound connections
+- **Check `DeviceFileEvents`** for any `tor(.exe)` or `firefox(.exe)` file events.
+- **Check `DeviceProcessEvents`** for any signs of installation or usage.
+- **Check `DeviceNetworkEvents`** for any signs of outgoing connections over known TOR ports.
 
 ------------------------------------------------------------------------
 
@@ -127,18 +127,15 @@ DeviceNetworkEvents
 
 # 📊 Summary
 
-Unauthorized TOR usage was confirmed on endpoint **windows11lab-na**.
-The installer was downloaded, extracted, executed, and successfully
-established proxy communications. Encrypted outbound traffic consistent
-with TOR activity was observed.
+The user "windows11lab-na" on the "windows11lab-na" device initiated and completed the installation of the TOR browser. They proceeded to launch the browser, establish connections within the TOR network, and created various files related to TOR on their desktop, including a file named `tor-shopping-list.txt`. This sequence of activities indicates that the user actively installed, configured, and used the TOR browser, likely for anonymous browsing purposes, with possible documentation in the form of the "shopping list" file.
 
 ------------------------------------------------------------------------
 
 # 🚨 Response Taken
 
--   Endpoint isolated\
--   Activity documented\
--   Management notified\
+-   Endpoint isolated
+-   Activity documented
+-   Management notified
 -   Recommendations provided for application control and monitoring
 
 ------------------------------------------------------------------------
@@ -158,6 +155,6 @@ with TOR activity was observed.
 **Nabil Alam**\
 Cybersecurity \| Threat Hunting \| SOC Automation\
 GitHub: https://github.com/nabilalam14\
-LinkedIn: https://linkedin.com/in/nabil-alam
+LinkedIn: [https://linkedin.com/in/nabil-alam](https://www.linkedin.com/in/nabil-alam-32ba85158/)
 
 ------------------------------------------------------------------------
